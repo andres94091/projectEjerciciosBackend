@@ -6,7 +6,6 @@ from bson.json_util import dumps
 def getPacientes():
     con = db.get_connection()
     dbejercicios = con.ModeloEjercicios
-    dbpacientes = con.dbempleados
     try:
         pacientes = dbejercicios.pacientes
         retorno = dumps(pacientes.find({}))

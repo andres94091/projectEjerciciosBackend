@@ -5,8 +5,10 @@ def create_app(test_config=None):
         
     from modules.pacientes import bp as bppacientes
     from modules.datos_ejercicios import bp as bpdatos
+    from modules.info_musculos import bp as bpmusculos
 
     app.register_blueprint(bppacientes)
     app.register_blueprint(bpdatos)
+    app.register_blueprint(bpmusculos)
 
     return app
