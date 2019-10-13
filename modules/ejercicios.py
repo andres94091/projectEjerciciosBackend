@@ -1,7 +1,7 @@
 from flask import Blueprint
 from models import db
 
-bp = Blueprint('pacientes', __name__, url_prefix='/pacientes')
+bp = Blueprint('ejercicios', __name__, url_prefix='/ejercicios')
 
 @bp.route('/', methods=['GET'])
 def list():
