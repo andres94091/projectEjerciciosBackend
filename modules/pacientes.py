@@ -8,7 +8,6 @@ from models.pacientes import editarPaciente as modelEditarPaciente
 
 bp = Blueprint('pacientes', __name__, url_prefix='/pacientes')
 
-
 @bp.route('/', methods=['GET'])
 def list():
     print(db.get_connection())
