@@ -6,9 +6,12 @@ def create_app(test_config=None):
     from modules.pacientes import bp as bppacientes
     from modules.ejercicios import bp as bpdatos
     from modules.info_musculos import bp as bpmusculos
+    from modules.hashYear import bp as bphash
+
 
     app.register_blueprint(bppacientes)
     app.register_blueprint(bpdatos)
     app.register_blueprint(bpmusculos)
+    app.register_blueprint(bphash)
 
     return app
